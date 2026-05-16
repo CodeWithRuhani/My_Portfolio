@@ -1,130 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ruhani Gera | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ruhani Gera - AI Engineer. Building production-grade AI agents, LLMs, and intelligent systems.">
+    <meta name="keywords" content="AI Engineer, Data Science, Machine Learning, LLMs, Generative AI, Python, TypeScript">
+    <meta name="author" content="Ruhani Gera">
+    <meta property="og:title" content="Ruhani Gera - AI Engineer Portfolio">
+    <meta property="og:description" content="Building intelligent AI solutions and autonomous agents with LLMs and Generative AI">
+    <meta property="og:type" content="website">
+    <title>Ruhani Gera | AI Engineer & Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">Ruhani Gera</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-text">RG</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="prettypic.jpeg" alt="Ruhani Gera's Profile Picture" class="profile-pic">
-      <div class="hero-text">
-        <h1>Hi, I'm Ruhani Gera</h1>
-        <div class="typewriter">Intern AI Engineer</div>
-        <p>I'm deeply fascinated by how intelligent systems can transform everyday life — from smart assistants to gesture-controlled interfaces. My journey so far has been a blend of academic learning and hands-on experimentation, where I've built projects that combine creativity with practical AI applications.</p>
-        <div class="social-links">
-          <a href="mailto:ruhanigera7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/CodeWithRuhani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-word">Hi, I'm</span>
+                    <span class="title-highlight">Ruhani Gera</span>
+                </h1>
+                <p class="hero-subtitle">AI Engineer & Data Science Specialist</p>
+                <p class="hero-description">
+                    Building production-grade AI agents, LLMs, and intelligent systems. Passionate about Generative AI, autonomous agents, and solving real-world problems with innovative technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:ruhanigera7@gmail.com" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/CodeWithRuhani" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ruhani-gera-851454300" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="tel:+917589013972" class="social-icon" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="prettypic.jpeg" alt="Ruhani Gera" class="profile-image">
+                    <div class="image-blur"></div>
+                </div>
+            </div>
         </div>
-        <a href="Ruhani(Data_Science).pdf" class="download-btn" download>
-          <i class="fas fa-download"></i> Download Resume
+        <a href="#about" class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
         </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>As a final year student of Artificial Intelligence and Data science, I am building expertise in Python, SQL, Machine Learning, Deep Learning, and Data Science to contribute to the future of AI. I am eager to gain real-world experience through an internship where I can apply my skills, collaborate with industry experts, and enhance my problem-solving abilities.</p>
-    </div>
-  </section>
-
-  <section id="education">
-    <div class="container">
-      <h2>Education</h2>
-      <ul class="education-list">
-        <li><strong>Graduation:</strong> Sri Guru Teg Bahadur Khalsa College, Sri Anandpur Sahib Punjab (2023–2026), CGPA: 8.80</li>
-        <li><strong>12th Grade:</strong> Girls Senior Secondary School Nangal, District Roopnagar Punjab (2022–2023), Percentage: 87%</li>
-        <li><strong>10th Grade:</strong> Girls Senior Secondary School Nangal, District Roopnagar Punjab (2020–2021), Percentage: 88%</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>Cover Page - Chatbot Project</h3>
-          <p>This project is an AI-powered chatbot built using the Gemini Large Language Model (LLM). It can understand user inputs and respond with intelligent, context-aware replies.</p>
-          <a href="https://github.com/CodeWithRuhani/chatbot" target="_blank">
-            <img src="chatbot cover.jpg" alt="Chatbot Project Cover" loading="lazy">
-          </a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-para">
+                        I'm an <span class="highlight-text">AI Engineer with expertise in LLMs, Generative AI, and autonomous agent development</span>. Currently at 42Works, I'm building production-grade AI agents using Node.js, TypeScript, and OpenAI SDK.
+                    </p>
+                    <p class="about-para">
+                        My passion lies in designing intelligent systems that solve real-world problems. I have hands-on experience with <strong>RAG systems, vector databases, AI-powered applications, and scalable backend systems</strong>.
+                    </p>
+                    <p class="about-para">
+                        With a background in Artificial Intelligence & Data Science from Sri Guru Teg Bahadur Khalsa College (CGPA: 8.80), I'm driven by innovation and committed to contributing to impactful AI engineering teams.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>2+</h3>
+                            <p>AI Projects</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Tech Skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="project-card">
-          <h3>Hand Gestures Calculator</h3>
-          <p>This project uses computer vision to recognize hand gestures via webcam and translate them into basic mathematical operations.</p>
-          <video src="Hand gestures calculator.mp4" controls></video>
-          <a href="https://github.com/CodeWithRuhani/Hand-Gestures-Calculator" target="_blank" class="project-link">View on GitHub</a>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI Engineer</h3>
+                        <span class="experience-date">April 2026 – Present</span>
+                    </div>
+                    <p class="experience-company">42Works — Mohali, Punjab, India</p>
+                    <ul class="experience-list">
+                        <li>Collaborated with engineering teams to optimize AI inference pipelines and backend APIs</li>
+                        <li>Built AI automation workflows and integrated OpenAI-based solutions into real-world business applications</li>
+                        <li>Worked on vector databases, embeddings workflows, semantic search, and contextual AI memory systems</li>
+                        <li>Developed scalable AI-powered applications using LLMs, RAG pipelines, and FastAPI backend systems</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>AI Engineer Intern</h3>
+                        <span class="experience-date">Nov 2025 – March 2026</span>
+                    </div>
+                    <p class="experience-company">Relinns Technologies — Mohali, Punjab, India (On-site)</p>
+                    <ul class="experience-list">
+                        <li>Designed and developed autonomous AI agents with multi-step reasoning using OpenAI SDK with TypeScript and Node.js</li>
+                        <li>Built production-grade agentic pipelines with tool use, dynamic memory management, and context orchestration</li>
+                        <li>Integrated RAG systems with LangChain to enhance agent knowledge retrieval and contextual accuracy</li>
+                        <li><strong>Tech Stack:</strong> Node.js, TypeScript, OpenAI SDK, LangChain, Python, FastAPI, Git</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="certifications">
-    <div class="container">
-      <h2>Certifications</h2>
-      <ul class="certifications-list">
-        <li>✅ IBM Certified - Artificial Intelligence Fundamentals</li>
-        <li>✅ IBM Certified - Web Development Fundamentals</li>
-        <li>✅ IBM Certified - Career Management Essentials</li>
-      </ul>
-      <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="credly-link">View my certificates on Credly</a>
-      <div class="cert-grid">
-        <img src="AI certificate.jpg" alt="AI Certificate" loading="lazy">
-        <img src="web certificate.jpg" alt="Web Development Certificate" loading="lazy">
-        <img src="career management essentials certificate.jpg" alt="Career Management Certificate" loading="lazy">
-      </div>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">HTML</span>
+                    </div>
+                </div>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> <a href="mailto:ruhanigera7@gmail.com">ruhanigera7@gmail.com</a></p>
-        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank">LinkedIn Profile</a></p>
-        <p><i class="fab fa-github"></i> <a href="https://github.com/CodeWithRuhani" target="_blank">GitHub Profile</a></p>
-      </div>
-    </div>
-  </section>
+                <div class="skill-category">
+                    <h3>AI / ML & LLMs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenAI SDK</span>
+                        <span class="skill-tag">Gemini API</span>
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">HuggingFace</span>
+                        <span class="skill-tag">AI Agents</span>
+                        <span class="skill-tag">ChromaDB</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">Pinecone</span>
+                    </div>
+                </div>
 
-  <footer>
-    <div class="footer-content">
-      <div class="footer-icons">
-        <a href="mailto:ruhanigera7@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/CodeWithRuhani" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      </div>
-      <p>© 2025 Ruhani Gera. All rights reserved.</p>
-    </div>
-  </footer>
+                <div class="skill-category">
+                    <h3>Computer Vision</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">MediaPipe</span>
+                    </div>
+                </div>
 
-  <script src="script.js"></script>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & IDEs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VSCode</span>
+                        <span class="skill-tag">PyCharm</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Cursor</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Public Speaking</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Voice Interviewer</h3>
+                        <p class="project-description">
+                            An AI-driven voice-based interview system that analyzes a candidate's resume to conduct dynamic, personalized interviews. Generates context-aware questions using Google Gemini API, converts them to voice via TTS, and evaluates responses.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Streamlit</span>
+                            <span>Gemini API</span>
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>PyMuPDF</span>
+                        </div>
+                        <div class="project-features">
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Resume parsing with Tesseract OCR</li>
+                                <li>Semantic document retrieval using FAISS</li>
+                                <li>Voice-based interview simulation</li>
+                                <li>Real-time response evaluation</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CodeWithRuhani" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hand-Gesture Based Calculator</h3>
+                        <p class="project-description">
+                            A real-time hand-gesture-controlled calculator that tracks finger movements using OpenCV and MediaPipe. Deployed with a lightweight Python GUI for seamless user interaction and mathematical operations.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>NumPy</span>
+                            <span>PyAutoGUI</span>
+                        </div>
+                        <div class="project-features">
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Real-time hand gesture recognition</li>
+                                <li>Finger movement tracking</li>
+                                <li>Calculator operations via gestures</li>
+                                <li>Interactive GUI interface</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CodeWithRuhani/Hand-Gestures-Calculator" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chatbot with Gemini LLM</h3>
+                        <p class="project-description">
+                            An intelligent chatbot powered by Google's Gemini Large Language Model. Understands user inputs and responds with context-aware, intelligent replies for natural conversations.
+                        </p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini API</span>
+                            <span>LangChain</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-features">
+                            <p><strong>Key Features:</strong></p>
+                            <ul>
+                                <li>Natural language understanding</li>
+                                <li>Context-aware responses</li>
+                                <li>Conversation memory</li>
+                                <li>Interactive web interface</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/CodeWithRuhani/chatbot" class="project-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>B.Sc (Hons.) Artificial Intelligence & Data Science</h3>
+                        <span class="education-date">2023 – 2026</span>
+                    </div>
+                    <p class="education-school">
+                        <strong>Sri Guru Teg Bahadur Khalsa College, Sri Anandpur Sahib, Punjab</strong>
+                    </p>
+                    <p class="education-details">
+                        <strong>CGPA: 8.80</strong> | <span class="education-role">Ambassador, New Education Policy</span>
+                    </p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>12th Standard</h3>
+                        <span class="education-date">2022 – 2023</span>
+                    </div>
+                    <p class="education-school">
+                        <strong>Govt. Girls Senior Secondary School, Nangal, Punjab</strong>
+                    </p>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>10th Standard</h3>
+                        <span class="education-date">2020 – 2021</span>
+                    </div>
+                    <p class="education-school">
+                        <strong>Govt. Girls Senior Secondary School, Nangal, Punjab</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>IBM Certified</h3>
+                    <p>Artificial Intelligence Fundamentals</p>
+                    <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="cert-link">View on Credly</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>IBM Certified</h3>
+                    <p>Web Development Fundamentals</p>
+                    <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="cert-link">View on Credly</a>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>IBM Certified</h3>
+                    <p>Career Management Essentials</p>
+                    <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="cert-link">View on Credly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Let's build something amazing together! Reach out through any of these channels.</p>
+            <div class="contact-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <a href="mailto:ruhanigera7@gmail.com">ruhanigera7@gmail.com</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <a href="tel:+917589013972">+91 7589013972</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Nangal, Punjab, India</p>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <a href="https://github.com/CodeWithRuhani" target="_blank">CodeWithRuhani</a>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank">Ruhani Gera</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ruhani Gera. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="mailto:ruhanigera7@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/CodeWithRuhani" class="footer-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ruhani-gera-851454300" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
