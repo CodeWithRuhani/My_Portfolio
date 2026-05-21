@@ -6,6 +6,27 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
 
+const EMAILJS_CONFIG = {
+    publicKey: 'amaMIFSUWFxndNwzb',
+    serviceId: 'service_12t7un7',
+    templateId: 'mjvv7h1'
+};
+
+function isEmailJSConfigured() {
+    return !Object.values(EMAILJS_CONFIG).some(value => value.startsWith('YOUR_'));
+}
+
+function initEmailJS() {
+    if (window.emailjs && isEmailJSConfigured()) {
+        emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
+        return true;
+    }
+
+    return false;
+}
+
+const emailServiceReady = initEmailJS();
+
 // Toggle mobile menu
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -49,11 +70,11 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
     if (currentScroll > 50) {
-        navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(255, 0, 110, 0.1)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 4px 20px rgba(236, 42, 112, 0.08)';
     } else {
-        navbar.style.background = 'rgba(10, 14, 39, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.style.background = 'rgba(255, 255, 255, 0.96)';
+        navbar.style.boxShadow = '0 4px 20px rgba(236, 42, 112, 0.05)';
     }
 
     lastScroll = currentScroll;
@@ -95,12 +116,15 @@ if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Get form values
-        const name = this.querySelector('input[type="text"]').value;
-        const email = this.querySelector('input[type="email"]').value;
-        const message = this.querySelector('textarea').value;
+        if (!emailServiceReady) {
+            showNotification('Add your EmailJS public key, service ID, and template ID in script.js first.', 'error');
+            return;
+        }
 
-        // Validate form
+        const name = this.querySelector('input[name="name"]').value.trim();
+        const email = this.querySelector('input[name="email"]').value.trim();
+        const message = this.querySelector('textarea[name="message"]').value.trim();
+
         if (!name || !email || !message) {
             showNotification('Please fill in all fields', 'error');
             return;
@@ -113,13 +137,37 @@ if (contactForm) {
             return;
         }
 
-        // Create mailto link and send
-        const mailtoLink = `mailto:ruhanigera7@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(email)}`;
-        window.location.href = mailtoLink;
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalLabel = submitButton.textContent;
+        const templateParams = {
+            name,
+            email,
+            message,
+            title: this.querySelector('input[name="title"]').value
+        };
 
-        // Reset form
-        this.reset();
-        showNotification('Message sent! I\'ll get back to you soon.', 'success');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Sending...';
+
+        emailjs.send(
+            EMAILJS_CONFIG.serviceId,
+            EMAILJS_CONFIG.templateId,
+            templateParams,
+            { publicKey: EMAILJS_CONFIG.publicKey }
+        )
+            .then(() => {
+                this.reset();
+                showNotification('Message sent! I\'ll get back to you soon.', 'success');
+            })
+            .catch((error) => {
+                console.error('EmailJS error:', error);
+                const details = error?.text || error?.message || error?.status || 'unknown error';
+                showNotification(`Message could not be sent (${details}). Please check your EmailJS setup.`, 'error');
+            })
+            .finally(() => {
+                submitButton.disabled = false;
+                submitButton.textContent = originalLabel;
+            });
     });
 }
 
@@ -232,12 +280,28 @@ document.querySelectorAll('img[data-src]').forEach(img => imageObserver.observe(
 // ===========================
 
 document.querySelectorAll('.skill-tag').forEach(tag => {
+    tag.setAttribute('role', 'button');
+    tag.setAttribute('tabindex', '0');
+
+    const toggleActiveState = () => {
+        tag.classList.toggle('is-active');
+    };
+
     tag.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.1) rotate(2deg)';
     });
 
     tag.addEventListener('mouseleave', function() {
         this.style.transform = 'scale(1) rotate(0deg)';
+    });
+
+    tag.addEventListener('click', toggleActiveState);
+
+    tag.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            toggleActiveState();
+        }
     });
 });
 
