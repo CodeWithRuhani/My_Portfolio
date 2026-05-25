@@ -4,7 +4,7 @@
 // ===========================
 
 const GEMINI_API_KEY = 'AIzaSyBZ5IxVJMZjBWW-bNkjszED7HL3TiEsdHg';
-const GEMINI_MODEL = 'gemini-2.0-flash';
+const GEMINI_MODEL = 'gemini-2.5-flash';
 
 // ===========================
 // 📄 PASTE YOUR RESUME CONTENT BELOW
