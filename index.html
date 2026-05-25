@@ -498,7 +498,59 @@
             </div>
         </div>
     </footer>
+    <!-- ============================ -->
+    <!-- CHATBOT WIDGET               -->
+    <!-- ============================ -->
+    <div id="chatbot-container">
+        <!-- Floating button -->
+        <button id="chatbot-toggle" aria-label="Open chatbot">
+            <span id="chatbot-icon">💬</span>
+        </button>
 
+        <!-- Chat window -->
+        <div id="chatbot-window" class="hidden">
+            <div id="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">RG</div>
+                    <div>
+                        <h4>Ruhani's AI Assistant</h4>
+                        <span class="chatbot-status">● Online</span>
+                    </div>
+                </div>
+                <button id="chatbot-close" aria-label="Close chatbot">✕</button>
+            </div>
+
+            <div id="chatbot-messages">
+                <div class="bot-message">
+                    <p>Hi there! 👋 I'm Ruhani's AI assistant. Ask me anything about her skills, experience, or projects!</p>
+                </div>
+            </div>
+
+            <div id="chatbot-suggestions">
+                <button class="suggestion-chip">Tell me about Ruhani</button>
+                <button class="suggestion-chip">What are her top skills?</button>
+                <button class="suggestion-chip">Show me her projects</button>
+                <button class="suggestion-chip">How can I contact her?</button>
+            </div>
+
+            <form id="chatbot-form">
+                <input
+                    type="text"
+                    id="chatbot-input"
+                    placeholder="Ask about Ruhani..."
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" id="chatbot-send" aria-label="Send">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                        <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
