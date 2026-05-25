@@ -9,7 +9,7 @@ const navLinks = document.querySelectorAll('.nav-link');
 const EMAILJS_CONFIG = {
     publicKey: 'amaMIFSUWFxndNwzb',
     serviceId: 'service_12t7un7',
-    templateId: 'mjvv7h1'
+    templateId: 'template_l5601zs'  // ✅ add the template_ prefix (use exact ID from dashboard)
 };
 
 function isEmailJSConfigured() {
