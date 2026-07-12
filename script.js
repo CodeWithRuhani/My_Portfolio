@@ -137,12 +137,16 @@ if (contactForm) {
             return;
         }
 
+        // Optional LinkedIn profile field
+        const linkedin = this.querySelector('input[name="linkedin"]').value.trim();
+
         const submitButton = this.querySelector('button[type="submit"]');
         const originalLabel = submitButton.textContent;
         const templateParams = {
             name,
             email,
             message,
+            linkedin: linkedin || 'Not provided',
             title: this.querySelector('input[name="title"]').value
         };
 
