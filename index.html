@@ -1,556 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ruhani Gera - AI Engineer. Building production-grade AI agents, RAG systems, Automation workflows, LLMs, and intelligent systems.">
-    <meta name="keywords" content="AI Engineer, Data Science, Machine Learning, LLMs, Generative AI, Python, TypeScript">
-    <meta name="author" content="Ruhani Gera">
-    <meta property="og:title" content="Ruhani Gera - AI Engineer Portfolio">
-    <meta property="og:description" content="Building intelligent AI solutions and autonomous agents with LLMs and Generative AI">
-    <meta property="og:type" content="website">
-    <title>Ruhani Gera | AI Engineer Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ruhani Gera, AI Engineer. RAG systems, agent workflows and backend APIs.">
+<title>Ruhani Gera Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">
-                <span class="logo-text">RG</span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<header class="navbar">
+  <div class="inner">
+    <a class="logo" href="#home">RG</a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#work" class="nav-link">What I build</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="inner">
+    <div class="grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span>AI Engineer · Chandigarh, India</div>
+        <h1>Hi, I'm <span id="typed" aria-label="Ruhani Gera">Ruhani Gera</span></h1>
+        <p class="sub">I build retrieval systems, agent workflows and APIs.</p>
+        <p class="lede"><strong>One year of production experience</strong> with Python, FastAPI, LLM APIs and vector databases, across two engineering teams in Mohali. I turn a model and a pile of documents into something people can use.</p>
+        <div class="btns">
+          <a href="#projects" class="btn btn-primary">View my work</a>
+          <a href="#contact" class="btn btn-secondary">Get in touch</a>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="title-word">Hi, I'm</span>
-                    <span class="title-highlight">Ruhani Gera</span>
-                </h1>
-                <p class="hero-subtitle">an AI Engineer</p>
-                <p class="hero-description">
-                    Building production-grade AI agents, RAG systems, Automation Workflows, LLMs, and intelligent systems. Passionate about Generative AI, autonomous agents, and solving real-world problems with innovative technology.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#experience" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-                <div class="social-links">
-                    <a href="mailto:ruhanigera7@gmail.com" class="social-icon" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/CodeWithRuhani" class="social-icon" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/ruhani-gera-851454300" class="social-icon" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="ruhi.jpeg" alt="Ruhani Gera" class="profile-image">
-                    <div class="image-blur"></div>
-                </div>
-            </div>
+        <div class="social">
+          <a href="mailto:ruhanigera7@gmail.com" title="Email" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 8.2L20 7H4l8 6.2zM4 9.1V17h16V9.1l-8 6.2-8-6.2z"/></svg></a>
+          <a href="https://github.com/CodeWithRuhani" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg></a>
+          <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zm6.5 0h3.83v1.54h.05c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.79 2.66 4.79 6.12V21h-4v-4.9c0-1.17-.02-2.67-1.63-2.67s-1.88 1.27-1.88 2.58V21h-4V9.75z"/></svg></a>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-para">
-                        I'm an <span class="highlight-text">AI Engineer with expertise in Agentic AI , LLMs, Generative AI, Automation Workflow and backend development</span>. Currently at 42Works, I'm building production-grade AI agents using Python , RAG and OpenAI SDK.
-                    </p>
-                    <p class="about-para">
-                        My passion lies in designing intelligent systems that solve real-world problems. I have hands-on experience with <strong>RAG systems, vector databases, AI-powered applications, and scalable backend systems</strong>.
-                    </p>
-                    <p class="about-para">
-                        With a background in Artificial Intelligence & Data Science from Punjabi University, Patiala (CGPA: 8.80), I'm driven by innovation and committed to contributing to impactful AI engineering teams.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>2+</h3>
-                            <p>AI Projects</p>
-                        </div>
-                        <div class="stat">
-                            <h3>1</h3>
-                            <p>Year Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>15+</h3>
-                            <p>Tech Skills</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>AI Engineer</h3>
-                        <span class="experience-date">April 2026 – Present</span>
-                    </div>
-                    <p class="experience-company">42Works — Mohali, Punjab, India</p>
-                    <ul class="experience-list">
-                        <li>Collaborated with engineering teams to optimize AI inference pipelines and backend APIs</li>
-                        <li>Built AI automation workflows and integrated OpenAI-based solutions into real-world business applications</li>
-                        <li>Worked on vector databases, embeddings workflows, semantic search, and contextual AI memory systems</li>
-                        <li>Developed scalable AI-powered applications using LLMs, RAG pipelines, and FastAPI backend systems</li>
-                    </ul>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>AI Engineer Intern</h3>
-                        <span class="experience-date">Nov 2025 – March 2026</span>
-                    </div>
-                    <p class="experience-company">Relinns Technologies — Mohali, Punjab, India (On-site)</p>
-                    <ul class="experience-list">
-                        <li>Designed and developed autonomous AI agents with multi-step reasoning using OpenAI SDK with TypeScript and Node.js</li>
-                        <li>Built production-grade agentic pipelines with tool use, dynamic memory management, and context orchestration</li>
-                        <li>Integrated RAG systems with LangChain to enhance agent knowledge retrieval and contextual accuracy</li>
-                        <li><strong>Tech Stack:</strong> Node.js, TypeScript, OpenAI SDK, LangChain, Python, FastAPI, Git</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">HTML</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>AI / ML & LLMs</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenAI SDK</span>
-                        <span class="skill-tag">Gemini API</span>
-                        <span class="skill-tag">LangChain</span>
-                        <span class="skill-tag">RAG Systems</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                        <span class="skill-tag">HuggingFace</span>
-                        <span class="skill-tag">AI Agents</span>
-                        <span class="skill-tag">ChromaDB</span>
-                        <span class="skill-tag">FAISS</span>
-                        <span class="skill-tag">Pinecone</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Computer Vision</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">MediaPipe</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">FastAPI</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">Streamlit</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">Seaborn</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Databases & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools & IDEs</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">VSCode</span>
-                        <span class="skill-tag">PyCharm</span>
-                        <span class="skill-tag">Jupyter Notebook</span>
-                        <span class="skill-tag">Google Colab</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Cursor</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Public Speaking</span>
-                        <span class="skill-tag">Leadership</span>
-                        <span class="skill-tag">Teamwork</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <i class="fas fa-microphone-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI Voice Interviewer</h3>
-                        <p class="project-description">
-                            An AI-driven voice-based interview system that analyzes a candidate's resume to conduct dynamic, personalized interviews. Generates context-aware questions using Google Gemini API, converts them to voice via TTS, and evaluates responses.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                            <span>Gemini API</span>
-                            <span>LangChain</span>
-                            <span>FAISS</span>
-                            <span>PyMuPDF</span>
-                        </div>
-                        <div class="project-features">
-                            <p><strong>Key Features:</strong></p>
-                            <ul>
-                                <li>Resume parsing with Tesseract OCR</li>
-                                <li>Semantic document retrieval using FAISS</li>
-                                <li>Voice-based interview simulation</li>
-                                <li>Real-time response evaluation</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/CodeWithRuhani" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <i class="fas fa-hand-paper"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Hand-Gesture Based Calculator</h3>
-                        <p class="project-description">
-                            A real-time hand-gesture-controlled calculator that tracks finger movements using OpenCV and MediaPipe. Deployed with a lightweight Python GUI for seamless user interaction and mathematical operations.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>OpenCV</span>
-                            <span>MediaPipe</span>
-                            <span>NumPy</span>
-                            <span>PyAutoGUI</span>
-                        </div>
-                        <div class="project-features">
-                            <p><strong>Key Features:</strong></p>
-                            <ul>
-                                <li>Real-time hand gesture recognition</li>
-                                <li>Finger movement tracking</li>
-                                <li>Calculator operations via gestures</li>
-                                <li>Interactive GUI interface</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/CodeWithRuhani/Hand-Gestures-Calculator" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>AI Chatbot with Gemini LLM</h3>
-                        <p class="project-description">
-                            An intelligent chatbot powered by Google's Gemini Large Language Model. Understands user inputs and responds with context-aware, intelligent replies for natural conversations.
-                        </p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Gemini API</span>
-                            <span>LangChain</span>
-                            <span>Streamlit</span>
-                        </div>
-                        <div class="project-features">
-                            <p><strong>Key Features:</strong></p>
-                            <ul>
-                                <li>Natural language understanding</li>
-                                <li>Context-aware responses</li>
-                                <li>Conversation memory</li>
-                                <li>Interactive web interface</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/CodeWithRuhani/chatbot" class="project-link">
-                                <i class="fab fa-github"></i> View Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="education-item">
-                    <div class="education-header">
-                        <h3>B.Sc (Hons.) Artificial Intelligence & Data Science</h3>
-                        <span class="education-date">2023 – 2026</span>
-                    </div>
-                    <p class="education-school">
-                        <strong>Punjabi University Patiala, Punjab</strong>
-                    </p>
-                    <p class="education-details">
-                        <strong>CGPA: 8.80</strong> | <span class="education-role">Ambassador, New Education Policy</span>
-                    </p>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-header">
-                        <h3>12th Standard</h3>
-                        <span class="education-date">2022 – 2023</span>
-                    </div>
-                    <p class="education-school">
-                        <strong>Govt. Girls Senior Secondary School, Nangal, Punjab</strong>
-                    </p>
-                </div>
-
-                <div class="education-item">
-                    <div class="education-header">
-                        <h3>10th Standard</h3>
-                        <span class="education-date">2020 – 2021</span>
-                    </div>
-                    <p class="education-school">
-                        <strong>Govt. Girls Senior Secondary School, Nangal, Punjab</strong>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <div class="cert-card">
-                    <div class="cert-image-wrap">
-                        <img src="AI certificate.jpg" alt="AI certificate" class="cert-image">
-                    </div>
-                    <h3>IBM Certified</h3>
-                    <p>Artificial Intelligence Fundamentals</p>
-                    <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="cert-link">View on Credly</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-image-wrap">
-                        <img src="web certificate.jpg" alt="Web certificate" class="cert-image">
-                    </div>
-                    <h3>IBM Certified</h3>
-                    <p>Web Development Fundamentals</p>
-                    <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="cert-link">View on Credly</a>
-                </div>
-
-                <div class="cert-card">
-                    <div class="cert-image-wrap">
-                        <img src="career management essentials certificate.jpg" alt="Career management essentials certificate" class="cert-image">
-                    </div>
-                    <h3>IBM Certified</h3>
-                    <p>Career Management Essentials</p>
-                    <a href="https://www.credly.com/users/ruhani-gera" target="_blank" class="cert-link">View on Credly</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Let's build something amazing together! Reach out through any of these channels.</p>
-            <div class="contact-content">
-                <div class="contact-methods">
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Email</h3>
-                        <a href="mailto:ruhanigera7@gmail.com">ruhanigera7@gmail.com</a>
-                    </div>
-
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Location</h3>
-                        <p>Chandigarh, India</p>
-                    </div>
-
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/CodeWithRuhani" target="_blank">CodeWithRuhani</a>
-                    </div>
-
-                    <div class="contact-method">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <h3>LinkedIn</h3>
-                        <a href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank">Ruhani Gera</a>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <input type="hidden" name="title" value="Portfolio contact">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                        <p class="form-note">This sends directly to my inbox through EmailJS once the service is connected.</p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Ruhani Gera. All rights reserved.</p>
-            <div class="footer-social">
-                <a href="mailto:ruhanigera7@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/CodeWithRuhani" class="footer-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/ruhani-gera-851454300" class="footer-icon"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </footer>
-    <!-- ============================ -->
-    <!-- CHATBOT WIDGET               -->
-    <!-- ============================ -->
-    <div id="chatbot-container">
-        <!-- Floating button -->
-        <button id="chatbot-toggle" aria-label="Open chatbot">
-            <span id="chatbot-icon">💬</span>
-        </button>
-
-        <!-- Chat window -->
-        <div id="chatbot-window" class="hidden">
-            <div id="chatbot-header">
-                <div class="chatbot-header-info">
-                    <div class="chatbot-avatar">RG</div>
-                    <div>
-                        <h4>Ruhani's AI Assistant</h4>
-                        <span class="chatbot-status">● Online</span>
-                    </div>
-                </div>
-                <button id="chatbot-close" aria-label="Close chatbot">✕</button>
-            </div>
-
-            <div id="chatbot-messages">
-                <div class="bot-message">
-                    <p>Hi there! 👋 I'm Ruhani's AI assistant. Ask me anything about her skills, experience, or projects!</p>
-                </div>
-            </div>
-
-            <div id="chatbot-suggestions">
-                <button class="suggestion-chip">Tell me about Ruhani</button>
-                <button class="suggestion-chip">What are her top skills?</button>
-                <button class="suggestion-chip">Show me her projects</button>
-                <button class="suggestion-chip">How can I contact her?</button>
-            </div>
-
-            <form id="chatbot-form">
-                <input
-                    type="text"
-                    id="chatbot-input"
-                    placeholder="Ask about Ruhani..."
-                    autocomplete="off"
-                    required
-                />
-                <button type="submit" id="chatbot-send" aria-label="Send">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-                        <path d="M2 21l21-9L2 3v7l15 2-15 2v7z"/>
-                    </svg>
-                </button>
-            </form>
-        </div>
+      </div>
+      <div class="portrait">
+        <img src="ruhi.jpeg" alt="Ruhani Gera" width="390" height="494">
+        <span class="tagpill">Open to AI Engineer roles</span>
+      </div>
     </div>
+    <div class="stats">
+      <div class="stat"><b>1 yr</b><span>Production AI experience</span></div>
+      <div class="stat"><b>2</b><span>Engineering teams: Relinns and 42Works</span></div>
+      <div class="stat"><b>3</b><span>IBM certifications</span></div>
+      <div class="stat"><b>8.80</b><span>CGPA out of 10, B.Sc. AI and Data Science</span></div>
+    </div>
+    <div class="marquee" aria-label="Technologies I work with">
+      <div class="track">
+        <span>Python</span><span>FastAPI</span><span>LangChain</span><span>OpenAI SDK</span><span>RAG</span><span>Pinecone</span><span>FAISS</span><span>LangGraph</span><span>AutoGen</span><span>MCP</span><span>Node.js</span><span>TypeScript</span><span>React</span><span>SQL</span><span>MongoDB</span><span>Redis</span><span>Docker</span><span>Hugging Face</span><span>OpenCV</span><span>Git</span>
+        <span aria-hidden="true">Python</span><span aria-hidden="true">FastAPI</span><span aria-hidden="true">LangChain</span><span aria-hidden="true">OpenAI SDK</span><span aria-hidden="true">RAG</span><span aria-hidden="true">Pinecone</span><span aria-hidden="true">FAISS</span><span aria-hidden="true">LangGraph</span><span aria-hidden="true">AutoGen</span><span aria-hidden="true">MCP</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">TypeScript</span><span aria-hidden="true">React</span><span aria-hidden="true">SQL</span><span aria-hidden="true">MongoDB</span><span aria-hidden="true">Redis</span><span aria-hidden="true">Docker</span><span aria-hidden="true">Hugging Face</span><span aria-hidden="true">OpenCV</span><span aria-hidden="true">Git</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="chatbot.js"></script>
-    <script src="script.js"></script>
+<section id="work" class="band">
+  <div class="inner sec">
+    <div class="label"><b>What I build</b>Four areas</div>
+    <div>
+      <h2>Systems that connect a model to <em>real data</em> and real users.</h2>
+      <div class="caps">
+        <div class="card cap"><h3>Retrieval and semantic search</h3><p>Embedding pipelines, vector databases and retrieval workflows that give an LLM the right context for each question.</p><small>FAISS · Pinecone · LangChain</small></div>
+        <div class="card cap"><h3>Agent and tool-calling workflows</h3><p>Multi-step workflows where a model calls tools, plans steps and automates business tasks.</p><small>OpenAI SDK · Tool calling · MCP</small></div>
+        <div class="card cap"><h3>Backend services and APIs</h3><p>FastAPI and Node.js services that wrap AI features in clean REST endpoints other teams can integrate.</p><small>FastAPI · Node.js · REST · SQL</small></div>
+        <div class="card cap"><h3>Voice and vision prototypes</h3><p>Applications that listen, speak or watch: an interview bot with speech output and a gesture-controlled calculator.</p><small>gTTS · OpenCV · MediaPipe</small></div>
+      </div>
+
+      <div class="trace" aria-label="RAG request trace">
+        <div class="trace-head"><span><b>rag.request</b> · how a question travels</span><span>RAG</span></div>
+        <div class="stages" id="stages" role="group" aria-label="Pipeline stages">
+          <button class="stage" type="button" aria-pressed="true" data-i="0">query</button>
+          <button class="stage" type="button" aria-pressed="false" data-i="1">embed</button>
+          <button class="stage" type="button" aria-pressed="false" data-i="2">retrieve</button>
+          <button class="stage" type="button" aria-pressed="false" data-i="3">rerank</button>
+          <button class="stage" type="button" aria-pressed="false" data-i="4">generate</button>
+        </div>
+        <div class="rows" id="rows">
+          <div class="row" data-on="true"><div class="k">query</div><div class="v">"What changed in the refund policy this quarter?"</div></div>
+          <div class="row" data-on="false"><div class="k">embed</div><div class="v">The question becomes a dense vector, using the same embedding model that indexed the documents.</div></div>
+          <div class="row" data-on="false"><div class="k">retrieve</div><div class="v">
+            <div class="chunk"><span>refund-policy-v3.pdf · p.2</span><span>0.84</span><div class="bar"><i style="width:84%"></i></div></div>
+            <div class="chunk"><span>billing-faq.md · §4</span><span>0.79</span><div class="bar"><i style="width:79%"></i></div></div>
+            <div class="chunk"><span>changelog-q3.md · refunds</span><span>0.71</span><div class="bar"><i style="width:71%"></i></div></div>
+          </div></div>
+          <div class="row" data-on="false"><div class="k">rerank</div><div class="v">Two passages kept, one near-duplicate dropped.</div></div>
+          <div class="row" data-on="false"><div class="k">generate</div><div class="v">An answer grounded in the kept passages, with a citation for each claim [1][2].</div></div>
+        </div>
+        <div class="note">Sample data. It shows how the pipelines I build are structured.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="band deep">
+  <div class="inner sec">
+    <div class="label"><b>Experience</b></div>
+    <div>
+      <h2>Two roles building AI features for <em>live applications</em>.</h2>
+      <div class="card job">
+        <div class="job-top"><h3>AI Engineer</h3><span class="when">Apr 2026 – Present</span></div>
+        <p class="org">42Works · Mohali, Punjab, India (On-site)</p>
+        <ul>
+          <li>Developed and maintained Python-based AI applications and backend services with FastAPI, integrating APIs to support production workflows.</li>
+          <li>Built and optimized automation workflows that bring AI capabilities into existing applications.</li>
+          <li>Worked with backend APIs, embedding pipelines and vector databases to implement semantic search and contextual information retrieval.</li>
+          <li>Collaborated with cross-functional engineering teams to troubleshoot issues, improve performance and support reliable delivery.</li>
+        </ul>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Vector databases</span><span class="tag">Embeddings</span><span class="tag">REST APIs</span></div>
+      </div>
+      <div class="card job">
+        <div class="job-top"><h3>AI Engineer</h3><span class="when">Nov 2025 – Mar 2026</span></div>
+        <p class="org">Relinns Technologies · Mohali, Punjab, India (On-site)</p>
+        <ul>
+          <li>Developed backend workflows with Python, Node.js, TypeScript and the OpenAI SDK for AI-powered business applications.</li>
+          <li>Integrated REST APIs and LangChain-based retrieval workflows to connect application services with relevant context.</li>
+          <li>Implemented tool-calling and multi-step execution workflows that automate business tasks.</li>
+          <li>Used Git for version control and collaborated on application development and integration.</li>
+        </ul>
+        <div class="tags"><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">OpenAI SDK</span><span class="tag">LangChain</span><span class="tag">FastAPI</span><span class="tag">Git</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="band alt">
+  <div class="inner sec">
+    <div class="label"><b>Projects</b>Built on my own</div>
+    <div>
+      <h2>Two projects, each written up as <em>problem, approach and stack</em>.</h2>
+
+      <article class="card proj">
+        <div class="media shot-media"><img src="voice-interviewer.jpg" alt="AI Voice Interviewer screen: upload a resume or paste text to start a personalised interview" width="772" height="447"></div>
+        <div class="pbody">
+          <div class="ptop"><h3>AI Voice Interviewer</h3><span class="kind">LLM · RAG · Speech</span></div>
+          <div class="pgrid">
+            <div><h4>Problem</h4><p>Candidates practise interviews with generic question lists that ignore their own resume.</p></div>
+            <div><h4>Approach</h4><p>Parses the uploaded resume, retrieves relevant context with FAISS, asks the Gemini API for tailored questions and reads them aloud with text to speech.</p></div>
+            <div><h4>Stack</h4><div class="tags" style="margin-top:4px"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Gemini API</span><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">PyMuPDF</span><span class="tag">gTTS</span></div></div>
+            <div><h4>Status</h4><p>Working end to end as a Streamlit app.</p></div>
+          </div>
+          <div class="plinks"><a href="https://github.com/CodeWithRuhani" target="_blank" rel="noopener">View code</a></div>
+        </div>
+      </article>
+
+      <article class="card proj">
+        <div class="media"><video controls preload="metadata" playsinline poster="gesture-poster.jpg" aria-label="Demo of the hand-gesture calculator"><source src="gesture-demo.mp4" type="video/mp4"></video></div>
+        <div class="pbody">
+          <div class="ptop"><h3>Hand-Gesture Based Calculator</h3><span class="kind">Computer vision</span></div>
+          <div class="pgrid">
+            <div><h4>Problem</h4><p>Entering numbers needs a keyboard or touchscreen, which is awkward when hands are busy or a device is out of reach.</p></div>
+            <div><h4>Approach</h4><p>Tracks the hand and fingers from a webcam in real time and maps finger gestures to calculator inputs. The demo above builds an expression on screen from gestures alone.</p></div>
+            <div><h4>Stack</h4><div class="tags" style="margin-top:4px"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">NumPy</span><span class="tag">PyAutoGUI</span></div></div>
+            <div><h4>Status</h4><p>Working prototype with real-time gesture tracking.</p></div>
+          </div>
+          <div class="plinks"><a href="https://github.com/CodeWithRuhani/Hand-Gestures-Calculator" target="_blank" rel="noopener">View code</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="band deep">
+  <div class="inner sec">
+    <div class="label"><b>Skills</b>Grouped by layer</div>
+    <div>
+      <h2>The stack, from the <em>model layer</em> down to the database.</h2>
+      <div class="legend"><span><i class="a"></i>Used in jobs</span><span><i class="b"></i>Used in projects and learning</span></div>
+      <div class="skills">
+        <div class="card sk"><h3>Languages</h3><div class="chips"><span class="chip hi">Python</span><span class="chip hi">TypeScript</span><span class="chip hi">JavaScript</span><span class="chip hi">SQL</span><span class="chip">React</span></div></div>
+        <div class="card sk"><h3>Core CS</h3><div class="chips"><span class="chip">Object-Oriented Programming</span><span class="chip">Data Structures and Algorithms</span></div></div>
+        <div class="card sk"><h3>Backend and full-stack</h3><div class="chips"><span class="chip hi">FastAPI</span><span class="chip hi">REST APIs</span><span class="chip hi">API integration</span><span class="chip hi">Node.js</span><span class="chip">Flask</span><span class="chip">JWT authentication</span><span class="chip">CORS</span></div></div>
+        <div class="card sk"><h3>Databases</h3><div class="chips"><span class="chip hi">SQL</span><span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Database fundamentals</span></div></div>
+        <div class="card sk"><h3>LLM and GenAI</h3><div class="chips"><span class="chip hi">OpenAI SDK</span><span class="chip hi">LangChain</span><span class="chip hi">Prompt engineering</span><span class="chip">Gemini API</span><span class="chip">Hugging Face</span><span class="chip">Context engineering</span></div></div>
+        <div class="card sk"><h3>RAG and vector search</h3><div class="chips"><span class="chip hi">RAG</span><span class="chip hi">Embeddings</span><span class="chip hi">Vector databases</span><span class="chip hi">Semantic search</span><span class="chip">FAISS</span><span class="chip">Pinecone</span><span class="chip">ChromaDB</span></div></div>
+        <div class="card sk"><h3>Agentic AI</h3><div class="chips"><span class="chip hi">Tool and function calling</span><span class="chip hi">Multi-step agent workflows</span><span class="chip">MCP</span><span class="chip">LangGraph</span><span class="chip">AutoGen</span><span class="chip">Loop engineering</span></div></div>
+        <div class="card sk"><h3>Evaluation and quality</h3><div class="chips"><span class="chip">Prompt evaluation</span><span class="chip">RAG evaluation (RAGAS)</span><span class="chip">Hallucination handling</span><span class="chip">Guardrails</span></div></div>
+        <div class="card sk"><h3>ML and data</h3><div class="chips"><span class="chip">Scikit-learn</span><span class="chip">TensorFlow</span><span class="chip">Pandas</span><span class="chip">NumPy</span></div></div>
+        <div class="card sk"><h3>Vision</h3><div class="chips"><span class="chip">OpenCV</span><span class="chip">MediaPipe</span><span class="chip">Tesseract OCR</span></div></div>
+        <div class="card sk"><h3>Tools</h3><div class="chips"><span class="chip hi">Git</span><span class="chip hi">GitHub</span><span class="chip">Postman</span><span class="chip">Docker</span><span class="chip">Retell AI (no-code voice agents)</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="band alt">
+  <div class="inner sec">
+    <div class="label"><b>Education</b>and certificates</div>
+    <div>
+      <h2>Formal training in <em>AI and data science</em>.</h2>
+      <div class="edu">
+        <div class="card"><div><h3>M.Sc. (Hons.) Artificial Intelligence and Data Science</h3><p>Punjabi University, Patiala · Distance learning · Pursuing</p></div><span class="when">2026 – 2028</span></div>
+        <div class="card"><div><h3>B.Sc. (Hons.) Artificial Intelligence and Data Science</h3><p>Punjabi University, Patiala · CGPA 8.80/10 · Ambassador, New Education Policy</p></div><span class="when">2023 – 2026</span></div>
+        <div class="card"><div><h3>12th Standard</h3><p>Govt. Girls Senior Secondary School, Nangal, Punjab</p></div><span class="when">2022 – 2023</span></div>
+      </div>
+      <div class="certs">
+        <div class="card cert"><div class="shot"><img src="AI certificate.jpg" alt="IBM Artificial Intelligence Fundamentals certificate"></div><h3>Artificial Intelligence Fundamentals</h3><p>IBM SkillsBuild · Jul 2025</p></div>
+        <div class="card cert"><div class="shot"><img src="web certificate.jpg" alt="IBM Web Development Fundamentals certificate"></div><h3>Web Development Fundamentals</h3><p>IBM SkillsBuild · Jul 2025</p></div>
+        <div class="card cert"><div class="shot"><img src="career management essentials certificate.jpg" alt="IBM Career Management Essentials certificate"></div><h3>Career Management Essentials</h3><p>IBM SkillsBuild · Jul 2025</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="band">
+  <div class="inner">
+    <div class="contact-box">
+      <h2>Have an AI feature to build or a role to fill?</h2>
+      <p>Send a short note with what you are building. I reply with questions, a plan and a timeline.</p>
+      <div class="crow">
+        <span class="mail" id="mail">ruhanigera7@gmail.com</span>
+        <button class="btn" id="copyBtn" type="button">Copy email</button>
+        <a class="btn" href="https://www.linkedin.com/in/ruhani-gera-851454300" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/CodeWithRuhani" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="inner"><p>© 2026 Ruhani Gera · Chandigarh, India</p></div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
